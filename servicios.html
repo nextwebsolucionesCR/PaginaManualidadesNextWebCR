@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Manualidades CR</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <!-- Left Links -->
+            <div class="nav-links nav-group left">
+                <a href="index.html" data-i18n="nav_home">Inicio</a>
+                <a href="index.html#acerca" data-i18n="nav_about">Acerca</a>
+            </div>
+
+            <!-- Center Logo -->
+            <a href="index.html" class="logo">
+                <img src="img/logo/logo.png" alt="Logo">
+            </a>
+
+            <!-- Mobile Toggle -->
+            <div class="nav-toggle"><i class="fas fa-bars"></i></div>
+
+            <!-- Right Links -->
+            <div class="nav-links nav-group right">
+                <a href="servicios.html" class="active" data-i18n="nav_services">Servicios</a>
+                <a href="#cotizacion" data-i18n="nav_quote">Cotizar</a>
+                <a href="index.html#contacto" data-i18n="nav_contact">Contacto</a>
+                <a href="#" id="theme-toggle"><i class="fas fa-moon"></i></a>
+                <a href="#" id="lang-toggle"><i class="fas fa-globe"></i> <span class="lang-text">ES</span></a>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+    <!-- Service Hero (Impact Header) -->
+    <header class="service-hero">
+        <div class="service-hero-content">
+            <h1 data-i18n="services_page_title">Nuestros Servicios</h1>
+            <p data-i18n="services_page_subtitle">Dedicación y detalle en cada proyecto.</p>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <!-- Animacion (Row Left Text, Right Image) -->
+        <div id="animacion" class="service-row">
+            <div class="service-text">
+                <h2 data-i18n="serv_anim_title">Animamos todos tus eventos</h2>
+                <p>
+                    Llevamos la mejor energía a tu celebración. Desde cumpleaños infantiles hasta eventos corporativos,
+                    nuestro equipo se encarga de mantener a todos entretenidos con dinámicas, juegos y mucha diversión.
+                </p>
+                <a href="https://wa.me/000000000?text=Hola,%20quisiera%20consultar%20precios%20sobre%20Animación"
+                    class="btn-creative" data-i18n="serv_anim_btn">
+                    <i class="fab fa-whatsapp"></i> Consultar Precio
+                </a>
+            </div>
+            <div class="service-visual">
+                <div class="blob-shape">
+                    <img src="img/servicios/animador/animador1.png" alt="Animación">
+                </div>
+            </div>
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid rgba(0,0,0,0.1); margin: 0;">
+
+        <!-- Decoración General (Row Right Text, Left Grid) -->
+        <div id="decoracion" class="service-row reverse">
+            <div class="service-text">
+                <h2 data-i18n="serv_decor_title">Decoración General</h2>
+                <p data-i18n="serv_decor_desc">
+                    Transformamos cualquier espacio en un ambiente mágico. Cuidamos cada detalle, desde la paleta de
+                    colores
+                    hasta los arreglos florales y estructuras.
+                </p>
+                <a href="https://wa.me/000000000?text=Hola,%20quisiera%20consultar%20precios%20sobre%20Decoración"
+                    class="btn-creative" data-i18n="serv_anim_btn">
+                    <i class="fab fa-whatsapp"></i> Consultar Precio
+                </a>
+            </div>
+            <div class="service-visual" style="display: block;"> <!-- Block for grid -->
+                <div class="bento-grid">
+                    <div class="bento-item">
+                        <img src="img/servicios/decoracion/d1.png" class="gallery-img" alt="Decoración General">
+                    </div>
+                    <div class="bento-item">
+                        <img src="img/servicios/decoracion/d2.png" class="gallery-img" alt="Decoración General">
+                    </div>
+                    <div class="bento-item">
+                        <img src="img/servicios/decoracion/d3.png" class="gallery-img" alt="Decoración General">
+                    </div>
+                    <div class="bento-item">
+                        <img src="img/servicios/decoracion/d4.png" class="gallery-img" alt="Decoración General">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid rgba(0,0,0,0.1); margin: 0;">
+
+        <!-- Piñatas (Row Left Text, Right Grid) -->
+        <div id="pinatas" class="service-row">
+            <div class="service-text">
+                <h2 data-i18n="serv_pinatas_title">Piñatas Personalizadas</h2>
+                <p>
+                    ¡El momento más esperado de la fiesta! Creamos piñatas de cualquier personaje,
+                    forma o tamaño, con acabados de alta calidad y resistencia perfecta.
+                </p>
+                <a href="https://wa.me/000000000?text=Hola,%20quisiera%20consultar%20precios%20sobre%20Piñatas"
+                    class="btn-creative" data-i18n="serv_anim_btn">
+                    <i class="fab fa-whatsapp"></i> Consultar Precio
+                </a>
+            </div>
+            <div class="service-visual" style="display: block;">
+                <div class="bento-grid">
+                    <!-- Using Bento Logic: 1 big, 2 small -->
+                    <div class="bento-item" style="grid-column: span 2; grid-row: span 2;">
+                        <img src="img/servicios/piñataspersonalizadas/piñata1.jpeg" class="gallery-img"
+                            alt="Piñata Personalizada">
+                    </div>
+                    <div class="bento-item" style="grid-column: span 2; grid-row: span 1;">
+                        <img src="img/servicios/piñataspersonalizadas/piñata2.jpeg" class="gallery-img"
+                            alt="Piñata Personalizada">
+                    </div>
+                    <div class="bento-item" style="grid-column: span 2; grid-row: span 1;">
+                        <img src="img/servicios/piñataspersonalizadas/piñata3.jpeg" class="gallery-img"
+                            alt="Piñata Personalizada">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid rgba(0,0,0,0.1); margin: 0;">
+
+        <!-- Baby Shower (Row Right Text, Left Grid) -->
+        <div id="babyshower" class="service-row reverse">
+            <div class="service-text">
+                <h2 data-i18n="serv_bs_title">Baby Shower</h2>
+                <p>
+                    Celebra la llegada de tu bebé con una decoración tierna y elegante.
+                    Diseños personalizados para niños, niñas o revelación de género.
+                </p>
+                <a href="https://wa.me/000000000?text=Hola,%20quisiera%20consultar%20precios%20sobre%20Baby%20Shower"
+                    class="btn-creative" data-i18n="serv_anim_btn">
+                    <i class="fab fa-whatsapp"></i> Consultar Precio
+                </a>
+            </div>
+            <div class="service-visual" style="display: block;">
+                <div class="bento-grid" style="grid-template-columns: 1fr 1fr; grid-template-rows: 250px;">
+                    <div class="bento-item" style="grid-column: span 1;">
+                        <img src="img/servicios/babyshower/bs1.png" class="gallery-img" alt="Baby Shower Decor">
+                    </div>
+                    <div class="bento-item" style="grid-column: span 1;">
+                        <img src="img/servicios/babyshower/bs2.png" class="gallery-img" alt="Baby Shower Decor">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid rgba(0,0,0,0.1); margin: 0;">
+
+        <!-- Faroles (Row Left Text, Right Grid) -->
+        <div id="faroles" class="service-row">
+            <div class="service-text">
+                <h2 data-i18n="serv_faroles_title">Faroles Artesanales</h2>
+                <p>
+                    Ilumina tus festividades con nuestros faroles hechos a mano.
+                    Creatividad y tradición en cada pieza, perfectos para desfiles o decoración.
+                </p>
+                <a href="https://wa.me/000000000?text=Hola,%20quisiera%20consultar%20precios%20sobre%20Faroles"
+                    class="btn-creative" data-i18n="serv_anim_btn">
+                    <i class="fab fa-whatsapp"></i> Consultar Precio
+                </a>
+            </div>
+            <div class="service-visual" style="display: block;">
+                <div class="bento-grid" style="grid-template-columns: 1fr 1fr; grid-template-rows: 250px;">
+                    <div class="bento-item">
+                        <img src="img/servicios/faroles/farol1.jpeg" class="gallery-img" alt="Farol Artesanal">
+                    </div>
+                    <div class="bento-item">
+                        <img src="img/servicios/faroles/farol2.jpeg" class="gallery-img" alt="Farol Artesanal">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid rgba(0,0,0,0.1); margin: 0;">
+
+        <!-- Fiestas Tematicas (Row Right Text, Left Grid) -->
+        <div id="tematicas" class="service-row reverse">
+            <div class="service-text">
+                <h2 data-i18n="serv_tematica_title">Fiestas Temáticas</h2>
+                <p>
+                    ¿Tienes una idea loca? Nosotros la hacemos realidad.
+                    Años 80, Hollywood, Casino, Hawaiana... tú eliges el tema, nosotros ponemos la magia.
+                </p>
+                <a href="https://wa.me/000000000?text=Hola,%20quisiera%20consultar%20precios%20sobre%20Fiestas%20Temáticas"
+                    class="btn-creative" data-i18n="serv_anim_btn">
+                    <i class="fab fa-whatsapp"></i> Consultar Precio
+                </a>
+            </div>
+            <div class="service-visual" style="display: block;">
+                <div class="bento-grid" style="grid-template-columns: 1fr 1fr; grid-template-rows: 250px;">
+                    <div class="bento-item">
+                        <img src="img/servicios/fiestastematicas/fiestatematica1.jpeg" class="gallery-img"
+                            alt="Fiesta Temática">
+                    </div>
+                    <div class="bento-item">
+                        <img src="img/servicios/fiestastematicas/fiestatematica2.jpeg" class="gallery-img"
+                            alt="Fiesta Temática">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Agenda Cotizacion (Glass Card) -->
+        <div id="cotizacion" class="section glass-card text-center"
+            style="margin-top: 4rem; margin-bottom: 4rem; position: relative; z-index: 2;">
+            <h2 data-i18n="serv_booking_title" style="margin-bottom: 1rem;">Agenda tu Cotización</h2>
+            <p data-i18n="serv_booking_desc" style="max-width: 600px; margin: 0 auto 2rem auto;">
+                Puedo atenderte de forma virtual o presencial para planificar tu evento perfecto.
+            </p>
+            <a href="https://calendar.app.google/jdGSYRA4eyBfwsUC9" target="_blank" class="btn-creative"
+                data-i18n="serv_booking_btn">
+                <i class="fas fa-calendar-check"></i> Reservar Cita en Google Calendar
+            </a>
+        </div>
+
+    </div>
+
+    <!-- Gallery Modal -->
+    <div id="imageModal" class="modal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption" class="modal-caption"></div>
+    </div>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2026 Manualidades CR</p>
+        </div>
+    </footer>
+
+    <!-- Floating Developer Badge above Tawk.to -->
+    <div class="developer-badge-container">
+        <div class="developer-badge">
+            <div class="badge-logo">
+                <img src="img/logo.png" alt="Logo">
+            </div>
+            <div class="badge-text">
+                <span>Desarrollado por <strong>NextWeb CR</strong> </span>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Tawk.to & Scripts same as index -->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/69633d7c987b03197cb20051/1jelqgcbd';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/anti-inspection.js"></script>
+    <!-- Floating Icons -->
+    <div class="floating-icons">
+        <a href="https://wa.me/000000000" class="float-icon whatsapp" target="_blank"><i
+                class="fab fa-whatsapp"></i></a>
+        <a href="tel:000000000" class="float-icon phone"><i class="fas fa-phone"></i></a>
+    </div>
+</body>
+
+</html>

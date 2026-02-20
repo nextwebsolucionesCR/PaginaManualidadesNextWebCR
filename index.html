@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manualidades CR - Eventos Inolvidables</title>
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <!-- Left Links -->
+            <div class="nav-links nav-group left">
+                <a href="#inicio" data-i18n="nav_home">Inicio</a>
+                <a href="#acerca" data-i18n="nav_about">Acerca</a>
+                <a href="servicios.html" data-i18n="nav_services">Servicios</a>
+                <a href="servicios.html#cotizacion" data-i18n="nav_quote">Cotizar</a>
+            </div>
+
+            <!-- Center Logo -->
+            <a href="#" class="logo">
+                <img src="img/logo/logo.png" alt="Manualidades CR Logo">
+            </a>
+
+            <!-- Mobile Toggle -->
+            <div class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <!-- Right Links -->
+            <div class="nav-links nav-group right">
+                <a href="#logros" data-i18n="nav_achivements">Logros</a>
+                <a href="#resenas" data-i18n="nav_reviews">Reseñas</a>
+                <a href="#contacto" data-i18n="nav_contact">Contacto</a>
+                <a href="#" id="theme-toggle"><i class="fas fa-moon"></i></a>
+                <a href="#" id="lang-toggle"><i class="fas fa-globe"></i> <span class="lang-text">ES</span></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <!-- Hero Slider Background -->
+        <div class="hero-slider">
+            <!-- Slide 1: Image 1 -->
+            <div class="hero-slide active" data-text="Animador de eventos, Marcos"
+                data-i18n-data-text="hero_slide1_text">
+                <div class="slide-img" style="background-image: url('img/hero/hero1.png');"></div>
+            </div>
+
+            <!-- Slide 2: Image 2 -->
+            <div class="hero-slide" data-text="Llevo mi arte a cualquier evento" data-i18n-data-text="hero_slide2_text">
+                <div class="slide-img" style="background-image: url('img/hero/hero2.png');"></div>
+            </div>
+
+            <!-- Slide 3: Video -->
+            <div class="hero-slide" data-text="Decoro tu evento a detalle personalizado"
+                data-i18n-data-text="hero_slide3_text">
+                <video autoplay muted loop playsinline poster="img/hero/hero2.png">
+                    <source src="img/hero/herovideo.mp4" type="video/mp4">
+                    Tu navegador no soporta videos HTML5.
+                </video>
+            </div>
+        </div>
+
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+            <h1 id="hero-title" data-i18n="hero_title">Animador de eventos, Marcos</h1>
+            <p data-i18n="hero_subtitle">Decoración de eventos, animación garantizada y piñatas personalizadas.</p>
+            <a href="servicios.html" class="btn-creative" data-i18n="hero_cta">
+                Ver Servicios <i class="fas fa-arrow-right"></i>
+            </a>
+            <div class="hero-socials" style="margin-top: 2rem;">
+                <a href="#" style="color: white; font-size: 2rem; margin: 0 10px;"><i class="fab fa-facebook"></i></a>
+                <a href="#" style="color: white; font-size: 2rem; margin: 0 10px;"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Acerca De (Quien soy) - Redesigned -->
+    <section id="acerca" class="section relative-section">
+        <!-- Decorative Background Elements -->
+        <div class="blob-bg blob-1"></div>
+        <div class="blob-bg blob-2"></div>
+
+        <div class="container relative-z">
+            <div class="about-wrapper">
+                <div class="about-image-container">
+                    <div class="image-frame">
+                        <img src="img/acerca/acerca1.png" alt="Marcos Zeledon" class="about-img-creative">
+                    </div>
+                    <div class="experience-badge floating-anim">
+                        <span class="years" data-i18n="about_years_badge_val">11+</span>
+                        <span class="label" data-i18n="about_years_badge_text">Años de<br>Experiencia</span>
+                    </div>
+                </div>
+
+                <div class="about-content-creative">
+                    <h2 class="section-title-lg" data-i18n="about_title">Quién Soy</h2>
+                    <h3 class="subtitle-creative" data-i18n="about_subtitle">Marcos Zeledon</h3>
+                    <div class="divider-line"></div>
+
+                    <p class="about-desc-lg" data-i18n="about_desc">
+                        Soy el fundador de <strong>Creaciones Manualidades CR</strong>. Mi pasión es transformar
+                        espacios y momentos en recuerdos eternos.
+                        Desde la decoración más sutil hasta la animación más vibrante, cada detalle cuenta.
+                    </p>
+
+                    <blockquote class="quote-creative">
+                        <p data-i18n="about_quality">"No solo es hacerlo bien, es hacerlo <span
+                                class="highlight">detalladamente bien</span>."</p>
+                    </blockquote>
+
+                    <ul class="about-features">
+                        <li><i class="fas fa-check-circle"></i> Animación Profesional</li>
+                        <li><i class="fas fa-check-circle"></i> Decoración Personalizada</li>
+                        <li><i class="fas fa-check-circle"></i> Pasión por el Detalle</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Logros - Redesigned -->
+    <section id="logros" class="section achievements-section">
+        <div class="achievements-overlay"></div>
+        <div class="container relative-z">
+            <h2 class="text-center section-title-light" data-i18n="achievements_title">Nuestros Logros</h2>
+            <div class="achievements-grid">
+                <!-- Stat Item 1 -->
+                <div class="stat-card glass-effect">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-number" data-target="100">0</div>
+                    <p class="stat-label" data-i18n="stat_clients">Clientes Satisfechos</p>
+                </div>
+
+                <!-- Stat Item 2 -->
+                <div class="stat-card glass-effect">
+                    <div class="stat-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="stat-number" data-target="100">0</div>
+                    <p class="stat-label" data-i18n="stat_works">Trabajos Completados</p>
+                </div>
+
+                <!-- Stat Item 3 -->
+                <div class="stat-card glass-effect">
+                    <div class="stat-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <div class="stat-number" data-target="150">0</div>
+                    <p class="stat-label" data-i18n="stat_events">Eventos Animados</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beneficios -->
+    <!-- Benefits (Luxury Redesign) -->
+    <section id="beneficios" class="benefits-luxury">
+        <!-- Background Texture/Decoration -->
+        <div class="benefits-bg-decoration"></div>
+
+        <div class="container" style="position: relative; z-index: 2;">
+            <!-- Section Header -->
+            <div class="section-header-luxury">
+                <div class="luxury-icon-top"><i class="fas fa-crown"></i></div>
+                <h2 class="section-title-luxury" data-i18n="benefits_title">¿Por qué elegirnos?</h2>
+                <div class="luxury-underline"></div>
+            </div>
+
+            <div class="benefits-grid-luxury">
+                <!-- Card 1 -->
+                <div class="benefit-card-luxury">
+                    <div class="card-content-reset">
+                        <div class="icon-luxury">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3 data-i18n="benefit_1">Calidad de Materiales</h3>
+                        <p data-i18n="benefit_1_desc">Utilizamos solo los mejores materiales para asegurar decoraciones
+                            duraderas y hermosas.</p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="benefit-card-luxury">
+                    <div class="card-content-reset">
+                        <div class="icon-luxury">
+                            <i class="fas fa-fingerprint"></i>
+                        </div>
+                        <h3 data-i18n="benefit_2">Personalización Total</h3>
+                        <p data-i18n="benefit_2_desc">Cada detalle se ajusta a tus gustos y necesidades específicas.</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="benefit-card-luxury">
+                    <div class="card-content-reset">
+                        <div class="icon-luxury">
+                            <i class="fas fa-magic"></i>
+                        </div>
+                        <h3 data-i18n="benefit_3">Decoración + Animación</h3>
+                        <p data-i18n="benefit_3_desc">Solución integral: embellecemos tu espacio y animamos tu fiesta.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section Footer Decoration -->
+            <div class="section-footer-luxury">
+                <span class="luxury-divider-bottom">❖</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reseñas (Luxury Editorial) -->
+    <section id="resenas" class="reviews-luxury-section">
+        <div class="luxury-texture-overlay"></div>
+        <div class="container" style="position: relative; z-index: 2;">
+            <!-- Editorial Header -->
+            <div class="section-header-editorial">
+                <span class="ornament-side left"><i class="fas fa-leaf"></i></span>
+                <h2 class="section-title-editorial" data-i18n="reviews_title">Lo que dicen nuestros clientes</h2>
+                <span class="ornament-side right"><i class="fas fa-leaf"></i></span>
+                <div class="editorial-divider-bottom"></div>
+            </div>
+
+            <!-- Video Testimonials -->
+            <div class="grid video-grid-luxury" style="grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 4rem;">
+                <div class="video-container glass-card">
+                    <h4>Testimonio 1</h4>
+                    <div style="padding:181.82% 0 0 0;position:relative;"><iframe
+                            src="https://player.vimeo.com/video/1165512636?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                            frameborder="0"
+                            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Reseña1"></iframe>
+                    </div>
+                    <script src="https://player.vimeo.com/api/player.js"></script>
+                </div>
+                <div class="video-container glass-card">
+                    <h4>Testimonio 2</h4>
+                    <div style="padding:181.82% 0 0 0;position:relative;"><iframe
+                            src="https://player.vimeo.com/video/1165514739?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                            frameborder="0"
+                            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Reseña2"></iframe>
+                    </div>
+                    <script src="https://player.vimeo.com/api/player.js"></script>
+                </div>
+            </div>
+
+            <!-- Infinite Scroll Marquee -->
+            <div class="reviews-marquee-luxury">
+                <!-- Row 1: Right to Left (Wait, prompt says Top Right, Bottom Left or vice versa) -->
+                <!-- Prompt: "fila superior va hacia la derecha, la inferior hacia la izquierda" -->
+
+                <!-- Row 1 (Top -> Right) -->
+                <div class="marquee-row marquee-right">
+                    <div class="marquee-content">
+                        <!-- Review 1 -->
+                        <div class="review-scroll-card rotation-1">
+                            <div class="wax-seal"><i class="fas fa-certificate"></i></div>
+                            <div class="stars">★★★★★</div>
+                            <p>"¡Increíble energía! Marcos hizo que el cumpleaños de mi hijo fuera inolvidable."</p>
+                            <small>~ Laura M.</small>
+                        </div>
+                        <!-- Review 2 -->
+                        <div class="review-scroll-card rotation-2">
+                            <div class="wax-seal"><i class="fas fa-certificate"></i></div>
+                            <div class="stars">★★★★★</div>
+                            <p>"La decoración fue exactamente lo que soñaba para mi boda. Súper recomendado."</p>
+                            <small>~ Sofía R.</small>
+                        </div>
+                        <!-- Review 3 -->
+                        <div class="review-scroll-card rotation-3">
+                            <div class="wax-seal"><i class="fas fa-certificate"></i></div>
+                            <div class="stars">★★★★★</div>
+                            <p>"Puntuales, profesionales y con un carisma único. ¡Gracias por todo!"</p>
+                            <small>~ Carlos D.</small>
+                        </div>
+                        <!-- Review 4 -->
+                        <div class="review-scroll-card rotation-1">
+                            <div class="wax-seal"><i class="fas fa-certificate"></i></div>
+                            <div class="stars">★★★★☆</div>
+                            <p>"Gran variedad de paquetes y precios justos. La piñata quedó hermosa."</p>
+                            <small>~ Andrea G.</small>
+                        </div>
+                        <!-- Review 5 -->
+                        <div class="review-scroll-card rotation-2">
+                            <div class="wax-seal"><i class="fas fa-certificate"></i></div>
+                            <div class="stars">★★★★★</div>
+                            <p>"La animación mantuvo a todos los niños entretenidos por horas. Un éxito."</p>
+                            <small>~ Miguel P.</small>
+                        </div>
+                    </div>
+                    <!-- Duplicate for loop -->
+                    <div class="marquee-content">
+                        <div class="review-scroll-card rotation-1">
+                            <div class="wax-seal"><i class="fas fa-certificate"></i></div>
+                            <div class="stars">★★★★★</div>
+                            <p>"¡Increíble energía! Marcos hizo que el cumpleaños de mi hijo fuera inolvidable."</p>
+                            <small>~ Laura M.</small>
+                        </div>
+                        <div class="review-scroll-card rotation-2">
+                            <div class="wax-seal"><i class="fas fa-certificate"></i></div>
+                            <div class="stars">★★★★★</div>
+                            <p>"La decoración fue exactamente lo que soñaba para mi boda. Súper recomendado."</p>
+                            <small>~ Sofía R.</small>
+                        </div>
+                        <div class="review-scroll-card rotation-3">
+                            <div class="wax-seal"><i class="fas fa-certificate"></i></div>
+                            <div class="stars">★★★★★</div>
+                            <p>"Puntuales, profesionales y con un carisma único. ¡Gracias por todo!"</p>
+                            <small>~ Carlos D.</small>
+                        </div>
+                        <div class="review-scroll-card rotation-1">
+                            <div class="wax-seal"><i class="fas fa-certificate"></i></div>
+                            <div class="stars">★★★★☆</div>
+                            <p>"Gran variedad de paquetes y precios justos. La piñata quedó hermosa."</p>
+                            <small>~ Andrea G.</small>
+                        </div>
+                        <div class="review-scroll-card rotation-2">
+                            <div class="wax-seal"><i class="fas fa-certificate"></i></div>
+                            <div class="stars">★★★★★</div>
+                            <p>"La animación mantuvo a todos los niños entretenidos por horas. Un éxito."</p>
+                            <small>~ Miguel P.</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row 2 (Bottom -> Left) -->
+                <div class="marquee-row marquee-left">
+                    <div class="marquee-content">
+                        <!-- Review 6 -->
+                        <div class="review-scroll-card rotation-3">
+                            <div class="wax-seal"><i class="fas fa-certificate"></i></div>
+                            <div class="stars">★★★★★</div>
+                            <p>"Detalles que enamoran. Se nota el amor que ponen en su trabajo cotidianamente."</p>
+                            <small>~ Elena T.</small>
+                        </div>
+                        <!-- Review 7 -->
+                        <div class="review-scroll-card rotation-1">
+                            <div class="wax-seal"><i class="fas fa-certificate"></i></div>
+                            <div class="stars">★★★★★</div>
+                            <p>"Excelente coordinación en el evento. No tuve que preocuparme por nada."</p>
+                            <small>~ Javi S.</small>
+                        </div>
+                        <!-- Review 8 -->
+                        <div class="review-scroll-card rotation-2">
+                            <div class="wax-seal"><i class="fas fa-certificate"></i></div>
+                            <div class="stars">★★★★★</div>
+                            <p>"Las luces y la música crearon el ambiente perfecto. ¡Repetiremos!"</p>
+                            <small>~ Valeria C.</small>
+                        </div>
+                        <!-- Review 9 -->
+                        <div class="review-scroll-card rotation-3">
+                            <div class="wax-seal"><i class="fas fa-certificate"></i></div>
+                            <div class="stars">★★★★★</div>
+                            <p>"Muy creativos con la temática de la fiesta. A todos les encantó."</p>
+                            <small>~ Daniel R.</small>
+                        </div>
+                        <!-- Review 10 -->
+                        <div class="review-scroll-card rotation-1">
+                            <div class="wax-seal"><i class="fas fa-certificate"></i></div>
+                            <div class="stars">★★★★★</div>
+                            <p>"Servicio 10/10. Desde la primera reunión hasta el final del evento, todo fluyó."</p>
+                            <small>~ Mónica L.</small>
+                        </div>
+                    </div>
+                    <!-- Duplicate -->
+                    <div class="marquee-content">
+                        <div class="review-scroll-card rotation-3">
+                            <div class="wax-seal"><i class="fas fa-certificate"></i></div>
+                            <div class="stars">★★★★★</div>
+                            <p>"Detalles que enamoran. Se nota el amor que ponen en su trabajo cotidianamente."</p>
+                            <small>~ Elena T.</small>
+                        </div>
+                        <div class="review-scroll-card rotation-1">
+                            <div class="wax-seal"><i class="fas fa-certificate"></i></div>
+                            <div class="stars">★★★★★</div>
+                            <p>"Excelente coordinación en el evento. No tuve que preocuparme por nada."</p>
+                            <small>~ Javi S.</small>
+                        </div>
+                        <div class="review-scroll-card rotation-2">
+                            <div class="wax-seal"><i class="fas fa-certificate"></i></div>
+                            <div class="stars">★★★★★</div>
+                            <p>"Las luces y la música crearon el ambiente perfecto. ¡Repetiremos!"</p>
+                            <small>~ Valeria C.</small>
+                        </div>
+                        <div class="review-scroll-card rotation-3">
+                            <div class="wax-seal"><i class="fas fa-certificate"></i></div>
+                            <div class="stars">★★★★★</div>
+                            <p>"Muy creativos con la temática de la fiesta. A todos les encantó."</p>
+                            <small>~ Daniel R.</small>
+                        </div>
+                        <div class="review-scroll-card rotation-1">
+                            <div class="wax-seal"><i class="fas fa-certificate"></i></div>
+                            <div class="stars">★★★★★</div>
+                            <p>"Servicio 10/10. Desde la primera reunión hasta el final del evento, todo fluyó."</p>
+                            <small>~ Mónica L.</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="section">
+        <div class="container">
+            <h2 class="section-title-creative" data-i18n="contact_title">Contáctanos</h2>
+
+            <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 3rem; margin-top: 2rem;">
+                <!-- Contact Info & Widgets -->
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>marcos@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>000000000</p>
+                    </div>
+
+                    <!-- Weather Widget -->
+                    <div class="weather-widget" style="margin-top: 2rem;">
+                        <a class="weatherwidget-io" href="https://forecast7.com/es/10d63n85d44/liberia/"
+                            data-label_1="GUANACASTE" data-label_2="CLIMA" data-theme="kiwi">GUANACASTE CLIMA</a>
+                        <script>
+                            !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+                        </script>
+                    </div>
+
+                    <!-- Clock Widget -->
+                    <div class="clock-widget" style="margin-top: 1rem;">
+                        <script src="https://cdn.logwork.com/widget/digital.js"></script>
+                        <a href="https://logwork.com/current-time-in-liberia-costa-rica-guanacaste"
+                            class="digital-clock" data-style="flip" data-size="300" data-timezone="America/Costa_Rica"
+                            data-language="es">Hora en Liberia</a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <form class="glass-card">
+                    <h3 data-i18n="form_title">Envíanos un mensaje</h3>
+                    <div style="margin-bottom: 1rem;">
+                        <input type="text" placeholder="Nombre" data-i18n-placeholder="form_name_ph"
+                            style="width: 100%; padding: 0.8rem; border-radius: 4px; border: 1px solid #ccc;">
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <input type="tel" placeholder="Teléfono" data-i18n-placeholder="form_phone_ph"
+                            style="width: 100%; padding: 0.8rem; border-radius: 4px; border: 1px solid #ccc;">
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <select style="width: 100%; padding: 0.8rem; border-radius: 4px; border: 1px solid #ccc;">
+                            <option value="" data-i18n="form_select_default">Selecciona un servicio</option>
+                            <option value="animacion" data-i18n="form_opt_anim">Animación</option>
+                            <option value="decoracion" data-i18n="form_opt_decor">Decoración</option>
+                            <option value="pinatas" data-i18n="form_opt_pinatas">Piñatas</option>
+                        </select>
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <textarea placeholder="Tu consulta..." rows="4" data-i18n-placeholder="form_msg_ph"
+                            style="width: 100%; padding: 0.8rem; border-radius: 4px; border: 1px solid #ccc;"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary" style="width: 100%;" data-i18n="form_btn">Enviar
+                        Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Manualidades CR</h3>
+                    <p data-i18n="footer_desc">Expertos en crear momentos inolvidables.</p>
+                </div>
+                <div class="footer-col">
+                    <h3 data-i18n="footer_links_title">Enlaces</h3>
+                    <ul>
+                        <li><a href="privacidad.html" data-i18n="footer_policy">Política de Privacidad</a></li>
+                        <li><a href="servicios.html" data-i18n="nav_services">Servicios</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3 data-i18n="footer_follow_title">Síguenos</h3>
+                    <div class="footer-socials">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer_rights">&copy; 2026 Manualidades CR. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Icons -->
+    <div class="floating-icons">
+        <a href="https://wa.me/000000000" class="float-icon whatsapp" target="_blank" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="tel:000000000" class="float-icon phone" aria-label="Llamar">
+            <i class="fas fa-phone"></i>
+        </a>
+    </div>
+
+    <!-- Floating Developer Badge above Tawk.to -->
+    <div class="developer-badge-container">
+        <div class="developer-badge">
+            <div class="badge-logo">
+                <img src="img/logo.png" alt="Logo">
+            </div>
+            <div class="badge-text">
+                <span>Desarrollado por <strong>NextWeb CR</strong> </span>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Tawk.to Script -->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/69633d7c987b03197cb20051/1jelqgcbd';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/anti-inspection.js"></script>
+</body>
+
+</html>
