@@ -834,7 +834,17 @@ img {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
   gap: 10px;
   backdrop-filter: blur(5px);
+  pointer-events: auto;
 }
+
+.developer-badge a {
+  transition: opacity 0.3s;
+}
+
+.developer-badge a:hover {
+  opacity: 0.8;
+}
+
 
 .badge-logo img {
   width: 25px;
